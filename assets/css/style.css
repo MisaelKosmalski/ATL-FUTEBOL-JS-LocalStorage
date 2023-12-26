@@ -182,42 +182,253 @@ body{
 }
 /* --------------------------------------- menu left - close ----------------------------------------*/
 
-.background-right{
-    display: flex;
-    width: 85%;
-    height: 100vh;
+/* --------------- Default ---------------- */
 
+.page{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 77vh;
 }
 
-/* --------------------------------------- item -----------------------------------------------------*/
-
-.background-item{
+.header-page{
     display: flex;
-    margin: 1%;
-    width: 75%;
-    height: 85vh;
-    background-color: #fff;
+    flex-direction: column;
+    width: 100%;
+    height: 10%;
+    margin-left: 1%;
+    margin-top: 1%;
+}
 
+.title-page{
+    color: #0F052E;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.subtitle-page{
+    color: #0F052E;
+    margin-top: -0.4rem;
+    margin-left: 0.1rem;
+}
+
+.page-item{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.background-list{
+    width: 75%;
+    height: 97%;
+    background-color: #fff;
+    margin-left: 1%;
+    margin-bottom: 0.5rem;
     border-top: 5px solid rgb(109, 107, 107);
     border-bottom: 3px solid rgb(109, 107, 107);
     border-radius: 1%;
 
     overflow-y: auto;
-}
-
-
-/* --------------------------------------- item - close ---------------------------------------------*/
-
-/* --------------------------------------- forms -----------------------------------------------------*/
-
-.background-forms{
+    overflow-x: hidden;
     display: flex;
-    margin: 1%;
-    width: 23%;
-    height: 85vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-form{
+    width: 22%;
+    height: 97%;
     background-color: #fff;
+    margin-left: 1%;
+    border-top: 5px solid rgb(109, 107, 107);
     border-bottom: 3px solid rgb(109, 107, 107);
+    border-radius: 1%;
+}
+
+#product-list{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 100%;
+    background-color: #fff;
+    margin-left: 1%;
+    margin-bottom: 0.5rem;
+    border-top: 5px solid rgb(109, 107, 107);
+    border-bottom: 3px solid rgb(109, 107, 107);
+    border-radius: 1%;
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+}
+
+.header-list{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+h3{
+    color: #230e62;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.body-list{
+    display: flex;
+    width: 100%;
+    height: 98%;
+}
+
+table{
+    margin-left: 0.5rem;
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    font-size: small;
+    overflow-y: auto;
+    text-wrap: nowrap;
+    color: rgb(44, 44, 44);
+}
+
+table th{
+    display: flex;
+    border-bottom: 1px solid rgb(77, 77, 77);;
+    text-align: left;
+    width: 100%;
+    align-items: center;
+}
+
+#th-prod{
+    height: 9%;
+}
+
+table td{
+    display: flex;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid rgb(225, 223, 223);
+    height: 1.8rem;
+    overflow-x: hidden;
+    font-size: small;
+    align-items: center;
+}
+
+table tr{
+    display: flex;
+    text-wrap: nowrap;
+}
+
+tr:nth-child(odd) {
+	background-color:#e2dfed;
+}
+
+.body-list{
+    width: 100%;
+    height: 100%;
+}
+
+tbody{
+    width: 100%;
+}
+
+.btn-list-delete, .btn-list-edit{
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    width: 2.6rem;
+    height: 1.2rem;
+    border-radius: 2px;
+}
+
+.btn-list-edit{
+    background-color: #3779ec;
+    border: 1px solid #1750b4;
+}
+
+.btn-list-delete{
+    margin-left: 0.2rem;
+    background-color: rgb(234, 53, 53);
+    border: 1px solid rgb(251, 19, 19);
+}
+
+/* --------------- Default - close ---------------- */
+
+/* --------------- Table Product ------------------ */
+.body-list #product-table{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#product-table .name-product,
+#product-table #name-prod{
+    padding-left: 0.2rem;
+    min-width: 20%;
+    max-width: 20%;
+    width: 20%;
+}
+
+#product-table .brand-product, 
+#product-table #brand-prod{
+    padding-left: 0.6rem;
+    min-width: 18%;
+    max-width: 18%;
+    width: 18%;
+}
+
+#product-table .descript-product, 
+#product-table #descript-prod{
+    padding-left: 0.6rem;
+    min-width: 20%;
+    max-width: 20%;
+    width: 20%;
+}
+
+#product-table .price-buy-product, 
+#product-table #price-buy-prod{
+    padding-left: 0.6rem;
+    min-width: 10%;
+    max-width: 10%;
+    width: 10%;
+}
+
+#product-table .price-product, 
+#product-table #price-prod{
+    padding-left: 0.6rem;
+    min-width: 10%;
+    max-width: 10%;
+    width: 10%;
+}
+
+#product-table .quantity-product, 
+#product-table #quantity-prod{
+    padding-left: 0.6rem;
+    min-width: 10%;
+    max-width: 10%;
+    width: 10%;
+}
+
+#product-table .btns-list, 
+#product-table #action-prod{
+    padding-left: 0.6rem;
+    min-width: 12%;
+    max-width: 12%;
+    width: 12%
+}
+
+#product-table .price-buy-product, 
+#product-table #price-buy-prod,
+#product-table .price-product, 
+#product-table #price-prod,
+#product-table .quantity-product, 
+#product-table #quantity-prod
+{
+    padding-left: 0.6rem;
+    display: flex;
+    justify-content: center;
 }
 
 
-/* --------------------------------------- forms - close ---------------------------------------------*/
+/* --------------- Table Product - close ------------------ */
