@@ -56,13 +56,13 @@
                     <div class="menu-button-left-menu">
                         <button class="buttons-left-menu">Comandas</button>
                     </div>
-    
+
                     <div class="menu-button-left-menu">
-                        <button class="buttons-left-menu">Financeiro</button>
+                        <button class="buttons-left-menu">Pedidos</button>
                     </div>
     
                     <div class="menu-button-left-menu">
-                        <button class="buttons-left-menu">Usuários</button>
+                        <button class="buttons-left-menu">Financeiro</button>
                     </div>
     
                     <hr class="mini-left-menu-hr">
@@ -75,8 +75,8 @@
 
                 <div class="header-page">
 
-                    <div class="title-page">Clientes</div>
-                    <div class="subtitle-page">Gerenciamento de Clientes</div>
+                    <div class="title-page">Produtos</div>
+                    <div class="subtitle-page">Gerenciamento de Produtos</div>
 
                 </div>
 
@@ -86,7 +86,7 @@
 
                         <!-- PRODUCT LIST -->
 
-                            <div id="product-list" style="display: none;">
+                            <div id="product-list" style="display: block;">
 
                                 <div class="header-list">
                                     <h3>Lista de Produtos</h3>
@@ -407,7 +407,7 @@
 
                         <!-- CLIENT LIST -->
 
-                            <div id="client-list"  style="display: block;">
+                            <div id="client-list"  style="display: none;">
 
                                 <div class="header-list">
                                     <h3>Lista de Clientes</h3>
@@ -630,7 +630,34 @@
 
                     <div class="background-form">
 
+                        <div class="header-form">
+                            <h3>Novo Produto</h3>
+                        </div>
 
+                        <!-- PRODUCT FORM -->
+
+                            <form role="form" id="product-form-create">
+
+                                <label for="input-name">Nome</label>
+                                <input type="text" required class="form-control-product" id="input-label-name" placeholder="Digite o nome" name="name"> 
+                                <label for="input-brand">Distribuidora</label>
+                                <input type="text" required class="form-control-product" id="input-label-brand" placeholder="Digite a distribuidora" name="brand"> 
+                                <label for="input-descript">Descrição</label>
+                                <input type="text" required class="form-control-product" id="input-label-descript" placeholder="Digite a descrição" name="descript"> 
+                                <label for="input-price-buy">Preço de compra</label>
+                                <input type="number" step="0.01" required class="form-control-product" id="input-label-price-buy" placeholder="R$" name="price-buy">  
+                                <label for="input-price">Preço de venda</label>
+                                <input type="number" step="0.01" required class="form-control-product" id="input-label-price" placeholder="R$" name="price"> 
+                                <label for="input-quantity">Quantidade</label>
+                                <input type="number" required class="form-control-product" id="input-label-quantity" placeholder="Digite a quantidade" name="quantity"> 
+                                
+                                <div class="btns">
+                                    <button type="submit" class="btn-save">Salvar</button>
+                                </div>
+
+                            </form>
+
+                        <!-- PRODUCT FORM - CLOSE -->
 
 
 
