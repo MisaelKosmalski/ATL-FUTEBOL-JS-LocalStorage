@@ -630,9 +630,9 @@
 
                     <div class="background-form">
 
-                        <!-- PRODUCT FORM -->
+                        <!-- PRODUCT FORM CREATE -->
 
-                        <div id="form-new-product" style="display: none;">
+                        <div id="form-new-product" class="form-create" style="display: none;">
 
                             <div class="header-form">
                                 <h3>Novo Produto</h3>
@@ -661,11 +661,45 @@
 
                         </div>
 
-                        <!-- PRODUCT FORM - CLOSE -->
+                        <!-- PRODUCT FORM CREATE - CLOSE -->
+
+                        <!-- PRODUCT FORM UPDATE -->
+
+                            <div id="form-update-product" class="form-update" style="display: block;">
+
+                                <div class="header-form">
+                                    <h3>Atualizar Produto</h3>
+                                </div>
+
+                                    <form role="form" id="product-form-update">
+
+                                        <label for="input-name-product">Nome</label>
+                                        <input type="text" required class="form-control-product" id="input-name-product" placeholder="Digite o nome" name="name"> 
+                                        <label for="input-brand-product">Distribuidora</label>
+                                        <input type="text" required class="form-control-product" id="input-brand-product" placeholder="Digite a distribuidora" name="brand"> 
+                                        <label for="input-descript-product">Descrição</label>
+                                        <input type="text" required class="form-control-product" id="input-descript-product" placeholder="Digite a descrição" name="descript"> 
+                                        <label for="input-price-buy-product">Preço de compra</label>
+                                        <input type="number" step="0.01" required class="form-control-product" id="input-price-buy-product" placeholder="R$" name="price-buy">  
+                                        <label for="input-price-product">Preço de venda</label>
+                                        <input type="number" step="0.01" required class="form-control-product" id="input-price-product" placeholder="R$" name="price"> 
+                                        <label for="input-quantity-product">Quantidade</label>
+                                        <input type="number" required class="form-control-product" id="input-quantity-product" placeholder="Digite a quantidade" name="quantity"> 
+                                
+                                        <div class="btns">
+                                            <button class="btn-cancel">Cancelar</button>
+                                            <button type="submit" class="btn-update">Salvar</button>
+                                        </div>
+
+                                    </form>
+
+                            </div>
+
+                        <!-- PRODUCT FORM UPDATE - CLOSE -->
 
                         <!-- CLIENT FORM -->
 
-                            <div id="form-new-client" style="display: block;">
+                            <div id="form-new-client" class="form-create" style="display: none;">
 
                                 <div class="header-form">
                                     <h3>Novo Cliente</h3>

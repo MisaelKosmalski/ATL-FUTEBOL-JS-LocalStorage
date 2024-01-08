@@ -240,11 +240,10 @@ body{
     height: 97%;
     background-color: #fff;
     margin-left: 1%;
-    border-top: 5px solid #00a65a;
-    border-bottom: 3px solid rgb(109, 107, 107);
-    border-radius: 1%;
     display: flex;
     flex-direction: column;
+    border-bottom: 3px solid rgb(109, 107, 107);
+    border-radius: 1%;
 }
 
 .header-list{
@@ -500,6 +499,16 @@ tbody{
 /* --------------- Table Client - close ------------------ */
 
 /* --------------- Forms --------------- */
+.form-create{
+    border-top: 5px solid #00a65a;
+    border-radius: 1%;
+}
+
+.form-update{
+    border-top: 5px solid #3779ec;
+    border-radius: 1%;
+}
+
 form{
     display: flex;
     flex-direction: column;
@@ -542,24 +551,44 @@ input{
     outline: none;
 }
 
-.btn-save{
+.btn-save, .btn-update, .btn-cancel{
     margin-top: 0.5rem;
     width: 4.5rem;
     height: 1.8rem;
     border-radius: 3px;
-    color: #fff;
     font-size: 1.1rem;
     cursor: pointer;
+    margin-left: 0.5rem;
 }
 
 .btn-save{
     background-color: #00a65a;
     border: solid 1px #008d4c;
+    color: #fff;
 }
 
 .btn-save:hover{
     background-color: #008d4c;
 }
 
+.btn-update{
+    background-color: #3779ec;
+    border: solid 1px #204d74;
+    color: #fff;
+}
+
+.btn-update:hover {
+    background-color: #367fa9;
+}
+
+.btn-cancel{
+    background-color: rgb(236, 236, 236);
+    border: solid 1px rgb(50, 50, 50);
+    color: rgb(50, 50, 50);
+}
+
+.btn-cancel:hover{
+    background-color: rgb(188, 188, 188);
+}
 
 /* --------------- Forms - close --------------- */
