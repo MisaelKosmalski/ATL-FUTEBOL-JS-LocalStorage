@@ -665,7 +665,7 @@
 
                         <!-- PRODUCT FORM UPDATE -->
 
-                            <div id="form-update-product" class="form-update" style="display: block;">
+                            <div id="form-update-product" class="form-update" style="display: none;">
 
                                 <div class="header-form">
                                     <h3>Atualizar Produto</h3>
@@ -697,7 +697,7 @@
 
                         <!-- PRODUCT FORM UPDATE - CLOSE -->
 
-                        <!-- CLIENT FORM -->
+                        <!-- CLIENT FORM CREATE -->
 
                             <div id="form-new-client" class="form-create" style="display: none;">
 
@@ -722,8 +722,35 @@
 
                             </div>
 
-                        <!-- CLIENT FORM - CLOSE -->
+                        <!-- CLIENT FORM CREATE - CLOSE -->
 
+                        <!-- CLIENT FORM UPDATE -->
+
+                            <div id="form-update-client" class="form-update" style="display: block;">
+
+                                <div class="header-form">
+                                    <h3>Atualizar Cliente</h3>
+                                </div>
+
+                                <form role="form" id="client-form-update">
+
+                                    <label for="input-name-client">Nome</label>
+                                    <input type="text" required id="input-name-client" placeholder="Digite o nome" name="name">
+                                    <label for="input-cpf-client">CPF</label>
+                                    <input type="number" id="input-cpf-client" placeholder="xxx.xxx.xxx-xx" name="cpf">
+                                    <label for="input-number-client">Telefone</label>
+                                    <input type="number" id="input-number-client" placeholder="(xx) xxxxx - xxxx" name="number">
+
+                                    <div class="btns">
+                                        <button class="btn-cancel">Cancelar</button>
+                                        <button type="submit" class="btn-update">Salvar</button>
+                                    </div>
+
+                                </form>
+
+                            </div>
+
+                        <!-- CLIENT FORM UPDATE - CLOSE -->
 
                     </div>
 
