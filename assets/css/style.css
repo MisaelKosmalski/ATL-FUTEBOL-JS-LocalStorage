@@ -266,6 +266,8 @@ h3{
 }
 
 table{
+    flex-direction: column;
+    display: flex;
     margin-left: 0.5rem;
     margin-right: 0.1rem;
     width: 100%;
@@ -344,7 +346,6 @@ tbody{
 
 #product-list{
     display: flex;
-    flex-direction: column;
     width: 75%;
     height: 77vh;
     background-color: #fff;
@@ -356,11 +357,10 @@ tbody{
 
     overflow-y: hidden;
     overflow-x: hidden;
-    display: flex;
 }
 
 #th-prod{
-    height: 9%;
+    height: 3rem;
 }
 
 .body-list #product-table{
@@ -465,7 +465,7 @@ tbody{
 }
 
 #th-client{
-    height: 9%;
+    height: 3rem;
 }
 
 #client-table .name-client,

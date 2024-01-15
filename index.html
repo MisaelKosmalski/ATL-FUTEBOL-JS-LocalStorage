@@ -108,21 +108,6 @@
 
                                             </tr>
 
-                                            <tr>
-
-                                                <td class="name-product">Polar</td>
-                                                <td class="brand-product">Ambev</td>
-                                                <td class="descript-product">1L</td>
-                                                <td class="price-buy-product">4.50</td>
-                                                <td class="price-product">9</td>
-                                                <td class="quantity-product">100</td>
-                                                <td class="btns-list">
-                                                    <button type="button" class="btn-list-edit">Editar</button>
-                                                    <button type="button" class="btn-list-delete">Excluir</button>
-                                                </td>
-
-                                            </tr>
-
                                     </table>
 
                                 </div>
@@ -195,7 +180,7 @@
                                     <label for="input-descript-product">Descrição</label>
                                     <input type="text" required class="form-control-product" id="input-descript-product" placeholder="Digite a descrição" name="descript"> 
                                     <label for="input-price-buy-product">Preço de compra</label>
-                                    <input type="number" step="0.01" required class="form-control-product" id="input-price-buy-product" placeholder="R$" name="price-buy">  
+                                    <input type="number" step="0.01" required class="form-control-product" id="input-price-buy-product" placeholder="R$" name="buyPrice">  
                                     <label for="input-price-product">Preço de venda</label>
                                     <input type="number" step="0.01" required class="form-control-product" id="input-price-product" placeholder="R$" name="price"> 
                                     <label for="input-quantity-product">Quantidade</label>
@@ -228,7 +213,7 @@
                                         <label for="input-descript-product">Descrição</label>
                                         <input type="text" required class="form-control-product" id="input-descript-product" placeholder="Digite a descrição" name="descript"> 
                                         <label for="input-price-buy-product">Preço de compra</label>
-                                        <input type="number" step="0.01" required class="form-control-product" id="input-price-buy-product" placeholder="R$" name="price-buy">  
+                                        <input type="number" step="0.01" required class="form-control-product" id="input-price-buy-product" placeholder="R$" name="buyPrice">  
                                         <label for="input-price-product">Preço de venda</label>
                                         <input type="number" step="0.01" required class="form-control-product" id="input-price-product" placeholder="R$" name="price"> 
                                         <label for="input-quantity-product">Quantidade</label>
@@ -312,6 +297,9 @@
 
 </body>
 
+    <script src="models/Product.js"></script>   
+    <script src="controllers/ProductController.js"></script>
+    
     <script src="utils/Btns.js"></script>
     <script src="index.js"></script>
 

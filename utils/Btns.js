@@ -34,9 +34,11 @@ class Btns{
     showPanelProduct(){
 
         document.querySelector("#form-new-product").style.display = "block";
+        document.querySelector("#form-update-product").style.display = "none";
         document.querySelector("#product-list").style.display = "block";
 
         document.querySelector("#form-new-client").style.display = "none";
+        document.querySelector("#form-update-client").style.display = "none";
         document.querySelector("#client-list").style.display = "none";
 
     }
@@ -44,9 +46,11 @@ class Btns{
     showPanelClient(){
 
         document.querySelector("#form-new-product").style.display = "none";
+        document.querySelector("#form-update-product").style.display = "none";
         document.querySelector("#product-list").style.display = "none";
 
         document.querySelector("#form-new-client").style.display = "block";
+        document.querySelector("#form-update-client").style.display = "none";
         document.querySelector("#client-list").style.display = "block";
 
     }
