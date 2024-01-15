@@ -215,7 +215,7 @@ body{
 .page-item{
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 77vh;
 }
 
 .background-list{
@@ -267,7 +267,7 @@ h3{
 
 table{
     margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-right: 0.1rem;
     width: 100%;
     height: 100%;
     border-collapse: collapse;
@@ -314,6 +314,10 @@ tbody{
     width: 100%;
 }
 
+.btns-list{
+    padding-right: 0.1rem;
+}
+
 .btn-list-delete, .btn-list-edit{
     color: #fff;
     text-align: center;
@@ -342,7 +346,7 @@ tbody{
     display: flex;
     flex-direction: column;
     width: 75%;
-    height: 100%;
+    height: 77vh;
     background-color: #fff;
     margin-left: 1%;
     margin-bottom: 0.5rem;
@@ -418,7 +422,7 @@ tbody{
     padding-left: 0.6rem;
     min-width: 12%;
     max-width: 12%;
-    width: 12%
+    width: 12%;
 }
 
 #product-table .price-buy-product, 
@@ -442,7 +446,7 @@ tbody{
     display: flex;
     flex-direction: column;
     width: 75%;
-    height: 100%;
+    height: 77vh;
     background-color: #fff;
     margin-left: 1%;
     margin-bottom: 0.5rem;
