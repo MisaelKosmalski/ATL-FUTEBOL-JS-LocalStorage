@@ -1,0 +1,1 @@
+let btns = new Btns();
