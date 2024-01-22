@@ -4,6 +4,7 @@ class Btns{
 
         this.btnProduct();
         this.btnClient();
+        this.btnOrderService();
 
     }
 
@@ -31,6 +32,18 @@ class Btns{
 
     }
 
+    btnOrderService(){
+
+        document.querySelector("#btn-orderService").addEventListener("click", e => {
+
+            this.showPanelOrderService();
+            document.querySelector("#title-page").innerHTML = "Comandas";
+            document.querySelector("#subtitle-page").innerHTML = "Gerenciamento de Comandas";
+
+        });
+
+    }
+
     showPanelProduct(){
 
         document.querySelector("#form-new-product").style.display = "block";
@@ -40,6 +53,8 @@ class Btns{
         document.querySelector("#form-new-client").style.display = "none";
         document.querySelector("#form-update-client").style.display = "none";
         document.querySelector("#client-list").style.display = "none";
+
+        document.querySelector("#orderService-list").style.display = "none";
 
     }
 
@@ -52,6 +67,22 @@ class Btns{
         document.querySelector("#form-new-client").style.display = "block";
         document.querySelector("#form-update-client").style.display = "none";
         document.querySelector("#client-list").style.display = "block";
+
+        document.querySelector("#orderService-list").style.display = "none";
+
+    }
+
+    showPanelOrderService(){
+
+        document.querySelector("#form-new-product").style.display = "none";
+        document.querySelector("#form-update-product").style.display = "none";
+        document.querySelector("#product-list").style.display = "none";
+
+        document.querySelector("#form-new-client").style.display = "none";
+        document.querySelector("#form-update-client").style.display = "none";
+        document.querySelector("#client-list").style.display = "none";
+
+        document.querySelector("#orderService-list").style.display = "block";
 
     }
 
