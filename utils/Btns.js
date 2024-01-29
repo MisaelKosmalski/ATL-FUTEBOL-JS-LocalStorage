@@ -55,6 +55,7 @@ class Btns{
         document.querySelector("#client-list").style.display = "none";
 
         document.querySelector("#form-new-orderService").style.display = "none";
+        document.querySelector("#form-update-orderService").style.display = "none";
         document.querySelector("#orderService-list").style.display = "none";
 
     }
@@ -70,6 +71,7 @@ class Btns{
         document.querySelector("#client-list").style.display = "block";
 
         document.querySelector("#form-new-orderService").style.display = "none";
+        document.querySelector("#form-update-orderService").style.display = "none";
         document.querySelector("#orderService-list").style.display = "none";
 
     }
@@ -85,6 +87,7 @@ class Btns{
         document.querySelector("#client-list").style.display = "none";
 
         document.querySelector("#form-new-orderService").style.display = "block";
+        document.querySelector("#form-update-orderService").style.display = "none";
         document.querySelector("#orderService-list").style.display = "block";
 
     }

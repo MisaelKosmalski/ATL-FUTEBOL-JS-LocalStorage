@@ -344,6 +344,42 @@
                             </div>
 
                         <!-- ORDER SERVICE FORM CREATE - CLOSE -->
+                        
+                        <!-- ORDER SERVICE FORM UPDATE -->
+
+                        <div id="form-update-orderService" class="form-update" style="display: none;">
+                            
+                            <div class="header-form">
+                                <h3>Atualizar Comanda</h3>
+                            </div>
+
+                            <form role="form" id="orderService-form-update">
+
+                                <label for="input-codeCard-orderService">Comanda</label>
+                                <input type="number" id="input-codeCard-orderService" placeholder="Número da comanda" name="code">
+                                <label for="input-table-orderService">Mesa</label>
+                                <input type="number" id="input-table-orderService" placeholder="Número da mesa" name="table">
+                                <label for="input-select-orderService">Clientes cadastrados</label>
+                                <select class="select-orderService" id="input-select-orderService" name="client">
+                                    <option value="" selected="selected">Selecione um cliente</option>
+                                    <option value="Kerollain Pink">Kerollain Pink</option>
+                                </select>
+                                <label for="input-name-orderService">Nome</label>
+                                <input type="text" required id="input-name-orderService" placeholder="Digite o nome" name="name">
+                                <label for="input-cpf-orderService">CPF</label>
+                                <input type="text" id="input-cpf-orderService" placeholder="xxx.xxx.xxx-xx" name="cpf">
+                                <label for="input-number-orderService">Telefone</label>
+                                <input type="text" id="input-number-orderService" placeholder="(xx) xxxxx - xxxx" name="number">
+                                <div class="btns">
+                                    <button class="btn-cancel">Cancelar</button>
+                                    <button type="submit" class="btn-update">Salvar</button>
+                                </div>
+
+                            </form>
+                        
+                        </div>
+
+                        <!-- ORDER SERVICE FORM UPDATE - CLOSE -->
 
                     </div>
 
