@@ -1,4 +1,4 @@
-class ClientController{
+class ClientController {
 
     constructor(formIdCreate, formIdUpdate, tableId){
 

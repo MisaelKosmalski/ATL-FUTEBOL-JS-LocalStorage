@@ -1,4 +1,4 @@
-class Product{
+class Product {
 
     constructor(name, brand, descript, buyPrice, price, quantity){
         this._id;
