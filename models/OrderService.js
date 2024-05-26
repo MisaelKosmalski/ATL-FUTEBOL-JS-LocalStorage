@@ -1,4 +1,4 @@
-class OrderService {
+class OrderService{
 
     constructor(code, table, name, cpf, number){
 

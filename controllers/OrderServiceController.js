@@ -1,4 +1,4 @@
-class OrderServiceController {
+class OrderServiceController{
 
     constructor(formIdCreate, formIdUpdate, tableId){
 

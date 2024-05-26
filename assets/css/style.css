@@ -12,7 +12,7 @@ body{
     height: 100vh;
     display: flex;
 
-    background-color: #b6a5ea;
+    background-image: linear-gradient(to top left, #48405f, #7b709c, #5d3dbc, #3b0fc0);
     overflow: hidden;
 }
 
@@ -201,13 +201,14 @@ body{
 }
 
 .title-page{
-    color: #0F052E;
-    font-size: 1.5rem;
+    color: #fff;
+    font-size: 1.6rem;
     font-weight: 800;
 }
 
 .subtitle-page{
-    color: #0F052E;
+    font-size: 1.1rem;
+    color: #fff;
     margin-top: -0.4rem;
     margin-left: 0.1rem;
 }
@@ -545,6 +546,7 @@ tbody{
     background-position: 10.5rem;
     background-size: 33%;
     background-repeat: no-repeat;
+
 }
 
 .box-orderService:hover{

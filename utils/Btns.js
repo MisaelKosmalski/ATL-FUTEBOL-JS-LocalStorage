@@ -1,4 +1,4 @@
-class Btns {
+class Btns{
 
     constructor(){
 

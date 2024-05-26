@@ -1,4 +1,4 @@
-class Client {
+class Client{
 
     constructor(name, cpf, number){
 

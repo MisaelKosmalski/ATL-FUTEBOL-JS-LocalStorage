@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/formOrder.css">
+    <link REL="SHORTCUT ICON" HREF="assets/img/logo.jpg">
+    <title>Novo Pedido</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header-form-order">
+
+            <div class="miniLogo-title">
+
+                <div class="miniLogo">
+                    <img src="assets/img/logo.jpg">
+                </div>
+    
+                <div class="title">Novo Pedido</div>
+
+            </div>
+            
+            <div class="cancel">Cancelar Pedido</div>
+
+        </div>
+
+        <div class="box-form-order">
+
+            <div class="left-form-order">
+
+                <div class="left-order">
+
+                    <div class="logo">
+                        <img src="assets/img/logo2.png">
+                    </div>
+
+                    <div class="title-orderService">Comanda</div>
+                    <div class="orderService">
+
+                        <div class="orderService-label">Número da comanda:</div>
+                        <div class="orderService-number">01</div>
+
+                    </div>
+
+                    <div class="place">
+
+                        <div class="place-label">Mesa:</div>
+                        <div class="place-number">01</div>
+
+                    </div>
+                    
+                    <div class="title-client">Cliente</div>
+                    <div class="name">
+                        <div class="name-client">Misael Kosmalski</div>
+
+                    </div>
+
+                    <div class="cpf">
+
+                        <div class="cpf-label">CPF:</div>
+                        <div class="cpf-number">111.111.111-11</div>
+
+                    </div>
+
+                    <div class="number">
+
+                        <div class="number-label">Telefone:</div>
+                        <div class="numberPhone">(051) 11111 - 1111</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="right-form-order">
+
+                <div class="label-right-form-order">
+
+                    <div class="number-number-order">
+
+                        <div class="title-order">Número do Pedido:&nbsp;&nbsp;&nbsp;#</div>
+                        <div class="number-order">1</div>
+
+                    </div>
+
+                    <div class="button-add-product">Produto</div>
+                    
+                </div>
+
+                <form role="form" id="order-form">
+
+                        <div class="title-product">Produtos</div>
+
+                        <div class="item-order">
+
+                            <div class="box-product">
+
+                                <div class="box-button-delete"><div class="button-delete-product"><b>X</b></div></div>
+    
+                                <div class="box-name-product">
+    
+                                    <label>Nome do Produto</label>
+                                    <input type="search" class="input-product" placeholder=" Digite o produto..." name="product">
+    
+                                </div>
+    
+                                <div class="box-quantity-total">
+    
+                                    <div class="box-quantity">
+    
+                                        <label>Quantidade</label>
+                                        <input type="number" value="1" name="quantity">
+    
+                                    </div>
+    
+                                    <div class="box-prices">
+    
+                                        <div class="unit-price">Valor Unit.: R$ 4,00</div>
+                                        <div class="total-price">Valor Total: R$ 4,00</div>
+    
+                                    </div>
+    
+                                </div>
+
+                                <div class="box-observation">
+
+                                    <label>Observação</label>
+                                    <textarea placeholder="Obs.: ..." name="text-observation" rows="4" cols="60"></textarea>
+
+                                </div>
+    
+                            </div>
+
+                        </div>
+
+                </form>
+
+                <div class="footer-right">
+
+                    <button type="submit" class="btn-save">Finalizar Pedido</button>
+
+                    <div class="total-price-order">
+
+                        <div class="label-total">Total: R$&nbsp;&nbsp;&nbsp;</div>
+                        <div class="total-value">260,50</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

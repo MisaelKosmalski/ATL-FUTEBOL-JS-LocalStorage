@@ -1,4 +1,4 @@
-class Product {
+class Product{
 
     constructor(name, brand, descript, buyPrice, price, quantity){
         this._id;
@@ -128,6 +128,8 @@ class Product {
         }
 
         localStorage.setItem("products", JSON.stringify(products));
+
+        console.log(products);
 
     }
 

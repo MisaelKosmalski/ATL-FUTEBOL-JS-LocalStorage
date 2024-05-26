@@ -1,4 +1,4 @@
-class ProductController {
+class ProductController{
 
     constructor(formIdCreate, formIdUpdate, tableId) {
 
