@@ -59,7 +59,7 @@
                     </div>
 
                     <div class="menu-button-left-menu">
-                        <button class="buttons-left-menu">Pedidos</button>
+                        <button class="buttons-left-menu" id="btn-order">Pedidos</button>
                     </div>
     
                     <div class="menu-button-left-menu">
@@ -162,6 +162,79 @@
                             </div>
 
                         <!-- ORDER SERVICE - CLOSE -->
+
+                        <!-- ORDER -->
+
+                            <div id="order-list" style="display: none;">
+                            
+                                <div class="header-list">
+                                    <h3>Pedidos Realizados</h3>
+                                </div>
+
+                                <div id="body-order">
+
+                                    <div id="order-searchBar">
+
+                                        <div id="order-date-flex">
+
+                                            <label for="order-date-search">Data</label>
+                                            <input type="date" id="order-date-search" name="dateOrder">
+
+                                        </div>
+
+                                        <div id="order-number-flex">
+
+                                            <label for="order-number-search">Núm. do Pedido</label>
+                                            <input type="number" id="order-number-search" name="orderNumber" placeholder="...">
+
+                                        </div>
+
+                                        <div id="order-orderService-flex">
+
+                                            <label for="order-orderService-search">Comanda</label>
+                                            <input type="number" id="order-orderService-search" name="orderServiceOrder" placeholder="...">
+
+                                        </div>
+
+                                        <div id="order-table-flex">
+
+                                            <label for="order-table-search">Mesa</label>
+                                            <input type="text" id="order-table-search" name="orderTable" placeholder="...">
+
+                                        </div>
+
+                                        <div id="order-name-flex">
+
+                                            <label for="order-name-search">Nome do Cliente</label>
+                                            <input type="text" id="order-name-search" name="orderName" placeholder="Digite o nome...">
+
+                                        </div>
+
+                                        <div id="order-cpf-flex">
+
+                                            <label for="order-cpf-search">CPF</label>
+                                            <input type="text" id="order-cpf-search" name="orderCpf" placeholder="xxx.xxx.xxx-xx">
+
+                                        </div>
+
+                                        <div id="order-phone-flex">
+
+                                            <label for="order-phone-search">Telefone</label>
+                                            <input type="text" id="order-phone-search" name="orderphone" placeholder="(xx) xxxxx - xxxx">
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="order-orders">
+
+                                    </div>
+
+                                </div>
+                            
+                            </div>
+
+                        <!-- ORDER - CLOSE -->
 
                     <div class="background-form">
 
