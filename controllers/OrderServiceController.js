@@ -158,7 +158,10 @@ class OrderServiceController{
                     <button class="btn-edit-orderService" style="background-image: url(assets/img/edit-icon.png);">Editar</button>
                     <div class="id-orderService">#${dataOrder.code}</div>
                     <div class="new-order-orderService">
-                        <button class="btn-order-orderService">Novo Pedido +</button>
+                        <a href="formOrder.html?orderCode=${dataOrder.code}&orderTable=${dataOrder.table}&orderName=${dataOrder.name}&orderCpf=${dataOrder.cpf}&orderNumber=${dataOrder.number}"                     
+                            target="_blank" rel="noopener">
+                            <button class="btn-order-orderService">Novo Pedido +</button>
+                        </a>
                     </div>
                 </div>
                 <div class="name-orderService">${dataOrder.name}</div>
