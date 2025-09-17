@@ -1,0 +1,1 @@
+let formOrderController = new FormOrderController("box-form-order");

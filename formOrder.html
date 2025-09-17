@@ -26,130 +26,138 @@
 
         </div>
 
-        <div class="box-form-order">
+        
 
-            <div class="left-form-order">
+        <form role="form" id="box-form-order">
 
-                <div class="left-order">
+                <div class="left-form-order">
 
-                    <div class="logo">
-                        <img src="assets/img/logo2.png">
-                    </div>
+                    <div class="left-order">
 
-                    <div class="title-orderService">Comanda</div>
-                    <div class="orderService">
+                        <div class="logo">
+                            <img src="assets/img/logo2.png">
+                        </div>
 
-                        <div class="orderService-label">Número da comanda:</div>
-                        <div class="orderService-number">01</div>
+                        <div class="title-orderService">Comanda</div>
+                        <div class="orderService">
 
-                    </div>
+                            <div class="orderService-label">Número da comanda:</div>
+                            <div id="orderService-number"></div>
 
-                    <div class="place">
+                        </div>
 
-                        <div class="place-label">Mesa:</div>
-                        <div class="place-number">01</div>
+                        <div class="place">
 
-                    </div>
-                    
-                    <div class="title-client">Cliente</div>
-                    <div class="name">
-                        <div class="name-client">Misael Kosmalski</div>
+                            <div class="place-label">Mesa:</div>
+                            <div id="place-number"></div>
 
-                    </div>
+                        </div>
+                        
+                        <div class="title-client">Cliente</div>
+                        <div class="name">
+                            <div id="name-client"></div>
 
-                    <div class="cpf">
+                        </div>
 
-                        <div class="cpf-label">CPF:</div>
-                        <div class="cpf-number">111.111.111-11</div>
+                        <div class="cpf">
 
-                    </div>
+                            <div class="cpf-label">CPF:</div>
+                            <div id="cpf-number"></div>
 
-                    <div class="number">
+                        </div>
 
-                        <div class="number-label">Telefone:</div>
-                        <div class="numberPhone">(051) 11111 - 1111</div>
+                        <div class="number">
+
+                            <div class="number-label">Telefone:</div>
+                            <div id="numberPhone"></div>
+
+                        </div>
 
                     </div>
 
                 </div>
 
-            </div>
+                <div class="right-form-order">
 
-            <div class="right-form-order">
+                    <div class="order-form">
 
-                <form role="form" id="order-form">
+                            <div class="title-product">Produtos</div>
 
-                        <div class="title-product">Produtos</div>
+                            <div class="item-order">
 
-                        <div class="item-order">
+                                <div class="box-product">
 
-                            <div class="box-product">
-
-                                <div class="box-button-delete"><div class="button-delete-product"><b>X</b></div></div>
-    
-                                <div class="box-name-product">
-    
-                                    <label>Nome do Produto</label>
-                                    <input type="search" class="input-product" placeholder=" Digite o produto..." name="product">
-    
-                                </div>
-    
-                                <div class="box-quantity-total">
-    
-                                    <div class="box-quantity">
-    
-                                        <label>Quantidade</label>
-                                        <input type="number" value="1" name="quantity">
-    
+                                    <div class="box-button-delete"><div class="button-delete-product"><b>X</b></div></div>
+        
+                                    <div class="box-name-product">
+        
+                                        <label>Nome do Produto</label>
+                                        <input type="search" class="input-product" placeholder=" Digite o produto..." name="product">
+        
                                     </div>
-    
-                                    <div class="box-prices">
-    
-                                        <div class="unit-price">Valor Unit.: R$ 4,00</div>
-                                        <div class="total-price">Valor Total: R$ 4,00</div>
-    
+        
+                                    <div class="box-quantity-total">
+        
+                                        <div class="box-quantity">
+        
+                                            <label>Quantidade</label>
+                                            <input type="number" value="1" name="quantity">
+        
+                                        </div>
+        
+                                        <div class="box-prices">
+        
+                                            <div class="unit-price">Valor Unit.: R$ 4,00</div>
+                                            <div class="total-price">Valor Total: R$ 4,00</div>
+        
+                                        </div>
+        
                                     </div>
-    
+
+                                    <div class="box-observation">
+
+                                        <label>Observação</label>
+                                        <textarea placeholder="Obs.: ..." name="text-observation" rows="4" cols="60"></textarea>
+
+                                    </div>
+        
                                 </div>
 
-                                <div class="box-observation">
-
-                                    <label>Observação</label>
-                                    <textarea placeholder="Obs.: ..." name="text-observation" rows="4" cols="60"></textarea>
-
-                                </div>
-    
                             </div>
 
+                            <div class="button-add-product-position">
+                    
+                                <div class="button-add-product">Produto</div>
+
+                            </div>
+
+                    </div>
+
+                    <div class="footer-right">
+
+                        <button type="submit" class="btn-save">Finalizar Pedido</button>
+
+                        <div class="total-price-order">
+
+                            <div class="label-total">Total: R$&nbsp;&nbsp;&nbsp;</div>
+                            <div class="total-value">260,50</div>
+
                         </div>
-
-                        <div class="button-add-product-position">
-                
-                            <div class="button-add-product">Produto</div>
-
-                        </div>
-
-                </form>
-
-                
-
-                <div class="footer-right">
-
-                    <button type="submit" class="btn-save">Finalizar Pedido</button>
-
-                    <div class="total-price-order">
-
-                        <div class="label-total">Total: R$&nbsp;&nbsp;&nbsp;</div>
-                        <div class="total-value">260,50</div>
 
                     </div>
 
                 </div>
 
-            </div>
+            
 
-        </div>
+        </form>
 
     </div>
 </body>
+
+<script src="models/FormOrder.js"></script>
+<script src="controllers/FormOrderController.js"></script>
+
+<script src="indexForm.js"></script>
+
 </html>
