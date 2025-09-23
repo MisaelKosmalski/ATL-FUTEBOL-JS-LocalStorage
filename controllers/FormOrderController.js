@@ -3,9 +3,16 @@ class FormOrderController{
     constructor(formId){
 
         this.formEl = document.getElementById(formId);
+        this._products = this.getProductsLocalStorage();     
+        this._content = document.getElementById("itemSearchs");
+
         this.getQueryParams();
-        this.teste();
         this.fillFields();
+        this.displayProducts(this._products);
+        this.searchProducts();
+
+        
+        this.teste();
 
     }
 
@@ -31,29 +38,70 @@ class FormOrderController{
     }
 
     fillFields(){
-
         let params = this.getQueryParams();
+        document.getElementById("orderService-number").innerHTML = params.orderCode;
+        document.getElementById("place-number").innerHTML = params.orderTable;
+        document.getElementById("name-client").innerHTML = params.orderName;
+        document.getElementById("cpf-number").innerHTML = params.orderCpf;
+        document.getElementById("numberPhone").innerHTML = params.orderNumber;
+    }
 
-        let orderServiceNumber = document.getElementById("orderService-number");
-        orderServiceNumber.innerHTML = params.orderCode;
+    getProductsLocalStorage(){
+        return localStorage.getItem("products") ? JSON.parse(localStorage.getItem("products")) : [];
+    }
 
-        let orderTable = document.getElementById("place-number");
-        orderTable.innerHTML = params.orderTable;
+    displayProducts(productsToDisplay) {
+        const productsHtml = productsToDisplay.map(product => `
+            <div class="searchingProducts">
+                ${product._name} &nbsp - &nbsp ${product._descript} &nbsp - &nbsp R$ ${product._price}
+            </div>
+            `).join('');
 
-        let orderName = document.getElementById("name-client");
-        orderName.innerHTML = params.orderName;
+        this._content.innerHTML = productsHtml;
+    }
 
-        let orderCpf = document.getElementById("cpf-number");
-        orderCpf.innerHTML = params.orderCpf;
+    searchProducts(){
 
-        let orderNumber = document.getElementById("numberPhone");
-        orderNumber.innerHTML = params.orderNumber;
+        let inputSearch = document.querySelector("input[type='search']");
+        let items = [];
+        let item = this._content;
+
+        items = this.getNameDescriptPrice();
+
+        inputSearch.oninput = () => {
+            this._content.innerHTML = "";
+            
+
+            items
+                .filter((item) =>
+                    item.toLowerCase().includes(inputSearch.value.toLowerCase())
+                )
+            .forEach((item) => addHTML(item));
+
+        };
 
     }
 
+    searchProducts(){
+        let inputSearch = document.querySelector("input[type='search']");
+        
+        // Ação 3: O evento "oninput" será o responsável por filtrar os produtos
+        inputSearch.oninput = () => {
+            const searchTerm = inputSearch.value.toLowerCase();
+            
+            // Ação 4: Filtra o array de produtos original.
+            const filteredProducts = this._products.filter(product => 
+                product._name.toLowerCase().includes(searchTerm) ||
+                (product._descript && product._descript.toLowerCase().includes(searchTerm))
+            );
+
+            // Ação 5: Chama o método displayProducts para exibir apenas os itens filtrados.
+            this.displayProducts(filteredProducts);
+        };
+    }
+
     teste(){
-        let parametros = this.getQueryParams();
-        console.log(parametros);
+        console.log(this._content);
     }
 
 }

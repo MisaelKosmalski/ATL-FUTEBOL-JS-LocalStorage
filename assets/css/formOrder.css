@@ -184,7 +184,7 @@ body{
             border-radius: 3px;
             background-color: #00a65a;
             border: solid 2px #008d4c;
-            background-image: url(/assets/img/more.png);
+            background-image: url(../img/more.jpg);
             background-repeat: no-repeat;
             background-size: 1.1rem;
             background-position: 0.5rem 70%;
@@ -204,6 +204,25 @@ body{
             overflow-y: auto;
             padding-right: 1rem;
             font-size: 1.1rem;
+            overflow-y: auto;
+        }
+
+        .order-form::-webkit-scrollbar{
+            width: 8px;
+        }
+
+        .order-form::-webkit-scrollbar-track {
+            background: #f1f1f1; /* Cor de fundo da trilha */
+            border-radius: 10px;
+        }
+
+        .order-form::-webkit-scrollbar-thumb {
+            background: #888; /* Cor da miniatura */
+            border-radius: 10px;
+        }
+
+        .order-form::-webkit-scrollbar-thumb:hover {
+            background: #555;
         }
 
         .title-product{
@@ -279,6 +298,22 @@ body{
             margin-bottom: 0.3rem;
         }
 
+        .searchingProducts{
+            background-color: #e9e2ff;
+            color: rgb(0, 0, 0);
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 0.4rem;
+            cursor: pointer;
+            border-bottom: 1px solid #bea8ff;
+            border-right: 1px solid #bea8ff;
+            border-left: 1px solid #bea8ff;
+        }
+
+        .searchingProducts:hover{
+            background-color: #bea8ff
+        }
+
         .box-quantity-total, .box-name-product{
             padding-left: 6%;
             padding-right: 6%;
@@ -319,13 +354,15 @@ body{
         }
 
         input{
+            height: 1.8rem;
             outline: none;
             font-size: 1.1rem;
-            padding-left: 0.3rem;
+            padding-left: 0.6rem;
+            border: 1px solid #bea8ff;
         }
 
-        .input-product::placeholder{
-            background-image: url(/assets/img/loupe.png);
+        #input-product::placeholder{
+            background-image: url(../img/loupe.png);
             background-repeat: no-repeat;
             background-size: 1rem;
             background-position: 0.2rem center;
@@ -359,7 +396,7 @@ body{
         }
 
         textarea:placeholder-shown{
-            background: url(/assets/img/writing.png) center center no-repeat;
+            background: url(../img/writing.png) center center no-repeat;
             background-size: 4rem;
         }
 
